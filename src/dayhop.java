@@ -27,8 +27,6 @@ public class dayhop {
             des2x = random.nextInt(10);
             des2y = random.nextInt(10);
         } while (des2y == playery || des2y == box1y || des2y == box2y || des2y == des1y);
-
-
         String[][] map = {
                 {"*", "*", "*", "*", "*", "*", "*", "*", "*", "*"},
                 {"*", "*", "*", "*", "*", "*", "*", "*", "*", "*"},
@@ -100,7 +98,6 @@ public class dayhop {
                     playery += dy;
                 }
             }
-
             map[des1x][des1y] = "D";
             map[des2x][des2y] = "D";
             map[playerx][playery] = "P";
